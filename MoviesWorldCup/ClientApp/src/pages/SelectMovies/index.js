@@ -1,6 +1,6 @@
 ﻿import React, { useState, useEffect, useMemo } from "react";
 import api from "../../services/api";
-import { Container, Header, Controls, MoviesList } from "./styles";
+import { Container, Header, Controls, MoviesList, Movie } from "./styles";
 
 export default function SelectMovies() {
   const [movies, setMovies] = useState([]);
@@ -118,6 +118,23 @@ export default function SelectMovies() {
 
   function handleChangeCheckbox(e) {
     if (checkedMovies >= 8) return;
+    const data = movies.map(movie => {
+      return movie.id === e.target.name
+        ? { ...movie, checked: !movie.checked }
+        : movie;
+    });
+
+    setMovies(data);
+  }
+
+  function handleGenerateChampionship() {
+    const data = movies.filter(movie => movie.checked);
+
+    console.log(data);
+
+    if (checkedMovies < 8) {
+      alert("Voce precisa escolher 8 filmes para gerar um campeonato");
+    }
   }
 
   return (
@@ -136,20 +153,24 @@ export default function SelectMovies() {
           <span>Selecionados</span>
           <span>{checkedMovies} de 8 filmes</span>
         </div>
-        <button>Gerar meu Campeonato</button>
+        <button onClick={handleGenerateChampionship}>
+          Gerar meu Campeonato
+        </button>
       </Controls>
       <MoviesList>
-        {movies.map(movie => (
-          <div key={movie.id}>
+        {movies.map((movie, index) => (
+          <Movie key={movie.id}>
             <input
               type="checkbox"
               name={movie.id}
               checked={movie.checked}
               onChange={handleChangeCheckbox}
             />
-            <p>{movie.titulo}</p>
-            <span>{movie.ano}</span>
-          </div>
+            <div>
+              <p>{movie.titulo}</p>
+              <span>{movie.ano}</span>
+            </div>
+          </Movie>
         ))}
       </MoviesList>
     </Container>

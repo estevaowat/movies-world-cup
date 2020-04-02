@@ -54,11 +54,25 @@ export const MoviesList = styled.div`
   margin-top: 15px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+`;
+
+export const Movie = styled.div`
+  display: flex;
+  align-items: center;
+  background: #fff;
+  margin: 0 10px 10px 0;
+  padding: 10px 15px;
+
+  input {
+    width: 16px;
+    height: 16px;
+    background: ${props => (props.checked ? "salmon" : "papayawhip")};
+    border-radius: 3px;
+    transition: all 150ms;
+  }
 
   div {
-    background: #fff;
-    margin: 0 10px 10px 0;
-    padding: 10px 15px;
+    margin-left: 15px;
 
     p {
       display: block;
