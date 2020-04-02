@@ -1,5 +1,5 @@
 ﻿import React, { useState, useEffect, useMemo } from "react";
-import api from "../../services/api";
+ 
 import { Container, Header, Controls, MoviesList, Movie } from "./styles";
 
 export default function SelectMovies() {
