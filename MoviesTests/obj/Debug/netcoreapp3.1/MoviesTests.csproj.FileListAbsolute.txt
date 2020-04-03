@@ -189,3 +189,11 @@ C:\Users\starsoft\Desktop\Projects\MoviesWorldCup\MoviesTests\obj\Debug\netcorea
 C:\Users\starsoft\Desktop\Projects\MoviesWorldCup\MoviesTests\obj\Debug\netcoreapp3.1\MoviesTests.AssemblyInfo.cs
 C:\Users\starsoft\Desktop\Projects\MoviesWorldCup\MoviesTests\obj\Debug\netcoreapp3.1\MoviesTests.csproj.CopyComplete
 C:\Users\starsoft\Desktop\Projects\MoviesWorldCup\MoviesTests\obj\Debug\netcoreapp3.1\MoviesTests.genruntimeconfig.cache
+C:\Users\starsoft\Desktop\Projects\MoviesWorldCup\MoviesTests\obj\Debug\netcoreapp3.1\MoviesTests.csproj.CoreCompileInputs.cache
+C:\Users\starsoft\Desktop\Projects\MoviesWorldCup\MoviesTests\bin\Debug\netcoreapp3.1\MoviesTests.pdb
+C:\Users\starsoft\Desktop\Projects\MoviesWorldCup\MoviesTests\bin\Debug\netcoreapp3.1\FluentAssertions.dll
+C:\Users\starsoft\Desktop\Projects\MoviesWorldCup\MoviesTests\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+C:\Users\starsoft\Desktop\Projects\MoviesWorldCup\MoviesTests\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+C:\Users\starsoft\Desktop\Projects\MoviesWorldCup\MoviesTests\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\starsoft\Desktop\Projects\MoviesWorldCup\MoviesTests\obj\Debug\netcoreapp3.1\MoviesTests.dll
+C:\Users\starsoft\Desktop\Projects\MoviesWorldCup\MoviesTests\obj\Debug\netcoreapp3.1\MoviesTests.pdb
