@@ -77,6 +77,7 @@ namespace MoviesWorldCup.Controllers {
             };
             List<Movie> listWinners = new List<Movie>();
             int rounds = (listMovies.Count / 2) - 1;
+            Movie secondPlace = null;
 
             listMovies.OrderBy(m => m.Title);
 
@@ -95,15 +96,17 @@ namespace MoviesWorldCup.Controllers {
                     var lastMovie = listMovies.Last();
 
                     var movieWinner = _championshipService.SelectWinner(firstMovie, lastMovie);
+                    secondPlace = movieWinner != firstMovie ? firstMovie : lastMovie;
+
+
                     listMovies.Remove(firstMovie);
                     listMovies.Remove(lastMovie);
                     listWinners.Add(movieWinner);
                 }
             }
-
-
-            var champion = listWinners.FirstOrDefault();
-            return Ok(champion);
+              
+            listWinners.Add(secondPlace);
+              return Ok(listWinners);
 
 
 
