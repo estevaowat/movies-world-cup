@@ -1,5 +1,5 @@
 ﻿import React, { useState, useEffect, useMemo } from "react";
- 
+
 import { Container, Header, Controls, MoviesList, Movie } from "./styles";
 
 export default function SelectMovies() {

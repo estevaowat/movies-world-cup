@@ -1,4 +1,4 @@
-﻿import styled from "styled-components";
+import styled from "styled-components";
 
 export const Container = styled.div``;
 
@@ -28,11 +28,9 @@ export const Header = styled.div`
 `;
 
 export const Controls = styled.div`
+  margin: 15px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: #fff;
-  margin-top: 30px;
+  justify-content: flex-end;
 
   button {
     border: 0;
@@ -43,43 +41,28 @@ export const Controls = styled.div`
     font-size: 16px;
     font-weight: bold;
   }
-  span {
-    display: block;
-    font-size: 20px;
-    font-weight: bold;
-  }
 `;
 
-export const MoviesList = styled.div`
-  margin-top: 15px;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-`;
+export const MoviesList = styled.div``;
 
 export const Movie = styled.div`
   display: flex;
-  align-items: center;
   background: #fff;
-  margin: 0 10px 10px 0;
-  padding: 10px 15px;
+  margin-bottom: 10px;
+  border-radius: 4px;
 
-  input {
-    width: 16px;
-    height: 16px;
-    border-radius: 3px;
+  span {
+    border-radius: 4px;
+    background: #6e6e6e;
+    align-items: center;
+    padding: 15px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
   }
 
-  div {
-    margin-left: 15px;
-
-    p {
-      display: block;
-      font-weight: bold;
-    }
-
-    span {
-      font-size: 12px;
-      color: #666;
-    }
+  p {
+    padding: 15px;
+    font-size: 16px;
   }
 `;
