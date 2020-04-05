@@ -1,0 +1,8 @@
+[
+  {
+    "outputFileName": "ClientApp/src/services/history.min.js",
+    "inputFiles": [
+      "ClientApp/src/services/history.js"
+    ]
+  }
+]

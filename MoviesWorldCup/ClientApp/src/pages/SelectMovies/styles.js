@@ -5,6 +5,7 @@ export const Container = styled.div``;
 export const Header = styled.div`
   display: flex;
   flex-direction: column;
+  align-self: center;
   align-items: center;
   justify-content: center;
 
@@ -53,14 +54,14 @@ export const Controls = styled.div`
 export const MoviesList = styled.div`
   margin-top: 15px;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 15px;
 `;
 
 export const Movie = styled.div`
-  display: flex;
+  display: flex; 
   align-items: center;
   background: #fff;
-  margin: 0 10px 10px 0;
   padding: 10px 15px;
 
   input {
@@ -83,3 +84,43 @@ export const Movie = styled.div`
     }
   }
 `;
+
+export const Loading = styled.div`
+ margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     animation: pulse 2s infinite;
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.8);
+	 
+	}
+
+	70% {
+		transform: scale(1);
+ 
+	}
+
+	100% {
+		transform: scale(0.8); 
+	}
+}
+
+
+`;
+
+
+
+export const EmptyMovies = styled.div`
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    strong {
+        font-size: 22px;
+        color: #fff;
+    }
+`

@@ -17,26 +17,25 @@ namespace MoviesTests {
         public IChampionshipService CreateNewInstanceChampionshipService() {
             return new ChampionshipService();
         }
-
-
+         
         [Fact]
         public void SelectWinner_ShouldReturnWinnerWithGreaterRating() {
             //Arrange
             var movie1 = new Movie()
             {
-                Id = "tt4881806",
-                Title = "Jurassic World: Reino Ameaçado",
-                ReleaseYear = 2018,
-                Rating = 6.7f
+                id = "tt4881806",
+                titulo = "Jurassic World: Reino Ameaçado",
+                ano= 2018,
+                nota= 6.7f
             };
 
 
             var movie2 = new Movie()
             {
-                Id = "tt3606756",
-                Title = "Os Incríveis 2",
-                ReleaseYear = 2018,
-                Rating = 8.5f
+                id = "tt3606756",
+                titulo = "Os Incríveis 2",
+                ano = 2018,
+                nota = 8.5f
             };
 
             //Act
@@ -46,26 +45,25 @@ namespace MoviesTests {
             result.Should().Be(movie2);
 
         }
-
-
+         
         [Fact]
         public void SelectWinner_ShouldReturnJurassicWorld() {
             //Arrange
             var movie1 = new Movie()
             {
-                Id = "tt4881806",
-                Title = "Jurassic World: Reino Ameaçado",
-                ReleaseYear = 2018,
-                Rating = 6.7f
+                id = "tt4881806",
+                titulo = "Jurassic World: Reino Ameaçado",
+                ano = 2018,
+                nota = 6.7f
             };
 
 
             var movie2 = new Movie()
             {
-                Id = "tt3606756",
-                Title = "O fantastica fabrica de chocolate",
-                ReleaseYear = 2018,
-                Rating = 6.7f
+                id = "tt3606756",
+                titulo = "O fantastica fabrica de chocolate",
+                ano = 2018,
+                nota = 6.7f
             };
 
             //Act

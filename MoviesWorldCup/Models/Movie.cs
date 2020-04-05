@@ -5,9 +5,9 @@ using System.Threading.Tasks;
 
 namespace MoviesWorldCup.Models {
     public class Movie {
-        public string Id { get; set; }
-        public string Title { get; set; }
-        public int ReleaseYear { get; set; }
-        public float Rating { get; set; }
+        public string id { get; set; }
+        public string titulo { get; set; }
+        public int ano { get; set; }
+        public float nota { get; set; }
     }
 }
