@@ -7,6 +7,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using MoviesWorldCup.Interface;
 using MoviesWorldCup.Services;
+using System;
 
 namespace MoviesWorldCup {
     public class Startup {
@@ -20,32 +21,27 @@ namespace MoviesWorldCup {
         public void ConfigureServices(IServiceCollection services) {
 
             services.AddControllersWithViews();
-             
+
             services.AddSpaStaticFiles(configuration => {
                 configuration.RootPath = "ClientApp/build";
             });
 
-            services.AddCors(options =>
-            {
-                options.AddPolicy(MyAllowSpecificOrigins,
-                builder => {
-                    builder.WithOrigins("http://copafilmes.azurewebsites.net/api/filmes").AllowAnyHeader()
-                                .AllowAnyMethod();
-                    ;
-                });
+     
+            services.AddHttpClient("apiMovies", options => {
+                options.BaseAddress = new Uri("http://copafilmes.azurewebsites.net");
             });
 
             services.AddScoped<IChampionshipService, ChampionshipService>();
         }
 
-        
+
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env) {
             if(env.IsDevelopment()) {
                 app.UseDeveloperExceptionPage();
             }
             else {
                 app.UseExceptionHandler("/Error");
-                
+
                 app.UseHsts();
             }
 

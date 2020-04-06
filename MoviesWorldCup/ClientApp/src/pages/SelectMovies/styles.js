@@ -64,10 +64,18 @@ export const Movie = styled.div`
   background: #fff;
   padding: 10px 15px;
 
-  input {
-    width: 16px;
-    height: 16px;
-    border-radius: 3px;
+  input { 
+    background: transparent;
+    border: 0;
+    margin-bottom: 8px;
+    font-size: 14px;
+    display: flex;
+    outline: 0;
+    color: #9B9B9B;
+    margin-right: 8px;
+    cursor: pointer;
+    textAlign: left;
+
   }
 
   div {
