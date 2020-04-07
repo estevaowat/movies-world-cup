@@ -30,7 +30,7 @@ Pelo terminal ou Powershell, entre na pasta ``` MoviesWorldCup\ClientApp ``` e r
 Clique no play no Visual Studio para rodar o projeto.
 
 ## Rodar testes 📝
-Para o testExplorer e clique em rodar r
+Clique no play no TestExplorer para rodar os testes da aplicação
 
 ## Autor
 
