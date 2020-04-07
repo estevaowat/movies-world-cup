@@ -4,7 +4,7 @@ import { Container, Header, Controls, MoviesList, Movie } from "./styles";
 
 export default function Result({ location }) {
     const { winners } = location.state;
-    console.log(winners)
+
     return (
         <Container>
             <Header>

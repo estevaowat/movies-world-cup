@@ -43,7 +43,6 @@ export default function SelectMovies() {
     }, []);
 
     function handleChangeCheckbox(e) {
-        console.log(e.target.id)
         if (checkedMovies >= 8) return;
 
         const data = movies.map(movie => {
@@ -73,7 +72,7 @@ export default function SelectMovies() {
                 winners: response.data
             });
         } catch (error) {
-            console.log(error);
+            toast.error("Erro ao buscar filmes, favor tente novamente.")
         }
     }
 
