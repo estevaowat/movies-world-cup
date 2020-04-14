@@ -11,10 +11,10 @@ Façam suas apostas!
 
 ## Demo
 
- <img alt="Copa do mundo" title="Fastfeet" src="https://github.com/estevaowat/movies-world-cup/blob/master/assets/Copa%20do%20mundo%20de%20filmes.PNG" width="700px" />
+ <img alt="Copa do mundo" title="Copa do mundo" src="https://github.com/estevaowat/movies-world-cup/blob/master/assets/Copa%20do%20mundo%20de%20filmes.PNG" width="700px" />
 
 
- <img alt="Resultado da copa do mundo" title="Fastfeet" src="https://github.com/estevaowat/movies-world-cup/blob/master/assets/resultado%20copa%20do%20mundo.PNG" width="700px" />
+ <img alt="Resultado da copa do mundo" title="Resultado da copa do mundo" src="https://github.com/estevaowat/movies-world-cup/blob/master/assets/resultado%20copa%20do%20mundo.PNG" width="700px" />
  
  
 ## Pré-Requistos ⚙
